@@ -1,0 +1,279 @@
+/* 
+    Theme Name: Pharoh
+    Author: Eslam Nour
+    Description:
+    Version: 1.0
+*/
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.headContainer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(52, 52, 52, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("img/761738316-Giza-Pyramids.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 640px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+#logohead {
+  padding-top: 300px;
+  padding-left: 200px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #e6b31e;
+  /* height: 80px; */
+}
+.section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  /* height: 70vh; */
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #084177;
+  font-weight: bolder;
+  text-align: center;
+  padding: 15px 22px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:after {
+  display: block;
+  content: "";
+  padding-bottom: 5px;
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+#navbar a:hover:after {
+  transform: scaleX(1);
+}
+#navbar a:not(:first-child) {
+  float: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.news {
+  min-height: 300px;
+}
+#news {
+  border: 1px solid #d4ac0d;
+}
+#news a {
+  text-decoration: none;
+  color: #000;
+}
+#news a:hover {
+  color: #084177;
+}
+#news:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  transition: ease-in-out 300ms;
+}
+
+/* ------------------------------------ */
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  display: subgrid;
+  border-radius: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+  justify-content: center;
+}
+#link {
+  text-decoration: none;
+  color: #d4ac0d;
+}
+#link:hover {
+  color: #fff;
+}
+.box:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: #d4ac0d;
+  font-size: 20px;
+  position: absolute;
+  text-decoration: none;
+
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header {
+  padding: auto;
+  color: #084177;
+  font-size: 70px;
+  font-family: "Lobster", cursive;
+}
+.header:after {
+  display: block;
+  content: "";
+  padding-bottom: 15px;
+  border-bottom: dashed 8px #614e04;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.header:hover:after {
+  transform: scaleX(0.2);
+}
+
+.page-footer {
+  background-color: #084177;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+}
+.page-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.page-footer a:hover {
+  color: #d4ac0d;
+  text-decoration: #fff solid 1px;
+}
+.footer-copyright {
+  background-color: #0f4c81;
+  color: #fff;
+}
+.footer-copyright a {
+  color: #d4ac0d;
+}
+.footer-copyright a:hover {
+  color: #fff;
+}
+
+#nv {
+  background-color: #d4ac0d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#nv a {
+  float: left;
+  display: block;
+  color: #084177;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nv a:after {
+  display: block;
+  content: "";
+  padding-bottom: 5px;
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+#nv a:hover:after {
+  transform: scaleX(1);
+}
+/* Gray Scale */
+.hover08 figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hover08 figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.card-deck {
+  height: 200px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgb(255, 255, 255)
+    ),
+    url("img/py.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sectionpy {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgb(255, 255, 255, 1)
+    ),
+    url("img/py2.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ---------------- Map Style ------------------ */
+.my-form {
+  color: #084177;
+}
+.my-form .btn-default {
+  background-color: #d4ac0d;
+  color: #000;
+  border-radius: 0;
+}
+.my-form .btn-default:hover {
+  background-color: #084177;
+  color: #fff;
+}
+.my-form .form-control {
+  border-radius: 0;
+}
+#logo:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
